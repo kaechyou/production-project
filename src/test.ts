@@ -1,3 +1,3 @@
 export function randomFn (arg: number) {
-  console.log('random', arg);
+  console.log('random RAWR', arg);
 }

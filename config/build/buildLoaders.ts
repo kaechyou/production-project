@@ -29,7 +29,23 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     exclude: /node_modules/,
   }
 
+  const fileLoader = {
+    test: /\.(png|jpe?g|gif|wott|wott2)$/i,
+    use: [
+      {
+        loader: 'file-loader',
+      },
+    ],
+  }
+
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack'],
+  }
+
   return [
+    fileLoader,
+    svgLoader,
     typescriptLoader,
     cssLoaders,
   ];

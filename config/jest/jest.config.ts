@@ -15,24 +15,13 @@ export default {
 
   // Automatically clear mock calls, instances and results before every test
   clearMocks: true,
-  testEnvironment: "jsdom",
-  coveragePathIgnorePatterns: [
-    "/node_modules/"
-  ],
-  moduleDirectories: [
-    "node_modules"
-  ],
-  moduleFileExtensions: [
-    "js",
-    "jsx",
-    "ts",
-    "tsx",
-    "json",
-    "node"
-  ],
-  rootDir: "../../",
-    testMatch: [
-    "<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)",
+  testEnvironment: 'jsdom',
+  coveragePathIgnorePatterns: ['/node_modules/'],
+  moduleDirectories: ['node_modules'],
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
+  rootDir: '../../',
+  testMatch: [
+    '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     // "**/__tests__/**/*.[jt]s?(x)",
     // "**/?(*.)+(spec|test).[tj]s?(x)"
   ],
@@ -47,7 +36,6 @@ export default {
   // coverageDirectory: undefined,
 
   // An array of regexp pattern strings used to skip coverage collection
-
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
@@ -85,7 +73,6 @@ export default {
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-
 
   // An array of file extensions your modules use
 
@@ -146,7 +133,6 @@ export default {
 
   // The test environment that will be used for testing
 
-
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
 
@@ -154,7 +140,6 @@ export default {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [

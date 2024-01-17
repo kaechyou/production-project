@@ -7,5 +7,8 @@
   "nav-main": "Главная",
   "nav-about": "О сайте",
   "page-not-found": "Страница не найдена",
-  "toggle-sidebar": "Переключить боковую панель"
+  "toggle-sidebar": "Переключить боковую панель",
+  "refresh-page": "Обновить страницу",
+  "an-unexpected-error-occurred": "Произошла непредвиденная ошибка",
+  "throw-eror": "Выбросить ошибку"
 }

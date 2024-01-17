@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import { useTheme } from './providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppRouter } from './providers/router';
@@ -8,10 +8,6 @@ import './styles/index.scss';
 
 const App = () => {
   const { theme } = useTheme();
-
-  useEffect(() => {
-    throw new Error();
-  });
 
   return (
     <div className={classNames('app', {}, [theme])}>

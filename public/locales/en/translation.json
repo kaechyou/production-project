@@ -7,5 +7,8 @@
   "nav-main": "Main Page",
   "nav-about": "About",
   "page-not-found": "Page not found",
-  "toggle-sidebar": "Toggle sidebar"
+  "toggle-sidebar": "Toggle sidebar",
+  "refresh-page": "Refresh page",
+  "an-unexpected-error-occurred": "An unexpected error occurred",
+  "throw-eror": "Throw eror"
 }

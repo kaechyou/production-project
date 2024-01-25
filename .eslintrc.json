@@ -40,7 +40,7 @@
     "i18next/no-literal-string": 2,
     "import/no-unresolved": "off",
     "no-unused-vars": "warn",
-    "max-len": ["error", { "ignoreComments": true, "ignorePattern": "^import.*" }],
+    "max-len": ["error", { "ignoreComments": true, "ignorePattern": "^import.*", "code": 100 }],
     "prettier/prettier": "error"
   }
 }

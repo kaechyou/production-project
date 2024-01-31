@@ -10,7 +10,8 @@
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:i18next/recommended"
+    "plugin:i18next/recommended",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -40,7 +41,14 @@
     "i18next/no-literal-string": 2,
     "import/no-unresolved": "off",
     "no-unused-vars": "warn",
-    "max-len": ["error", { "ignoreComments": true, "ignorePattern": "^import.*", "code": 100 }],
+    "max-len": [
+      "error",
+      {
+        "ignoreComments": true,
+        "ignorePattern": "^import.*",
+        "code": 100
+      }
+    ],
     "prettier/prettier": "error"
   }
 }

@@ -11,7 +11,7 @@ const meta = {
   },
   args: {
     to: '/',
-    children: 'Text'
+    children: 'Text',
   },
   tags: ['autodocs'],
 } satisfies Meta<typeof AppLink>;

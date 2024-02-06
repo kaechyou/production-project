@@ -15,13 +15,19 @@ export default ({ config }: { config: webpack.Configuration }) => {
   config.resolve?.extensions?.push('.ts', '.tsx');
 
   if (config.module) {
-    config.module.rules = config.module?.rules?.map((rule: RuleSetRule | '...') => {
-      if (rule !== '...' && rule.test instanceof RegExp && rule.test.toString().includes('svg')) {
-        return { ...rule, exclude: /\.svg$/i }
-      }
+    config.module.rules = config.module?.rules?.map(
+      (rule: RuleSetRule | '...') => {
+        if (
+          rule !== '...' &&
+          rule.test instanceof RegExp &&
+          rule.test.toString().includes('svg')
+        ) {
+          return { ...rule, exclude: /\.svg$/i };
+        }
 
-      return rule;
-    })
+        return rule;
+      },
+    );
   }
   config.module?.rules?.push({
     test: /\.svg$/,
@@ -31,4 +37,4 @@ export default ({ config }: { config: webpack.Configuration }) => {
   config.module?.rules?.push(buildCssLoader(true));
 
   return config;
-}
+};

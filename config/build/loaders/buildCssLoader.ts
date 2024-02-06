@@ -20,4 +20,3 @@ export function buildCssLoader(isDev: boolean) {
     ],
   };
 }
-

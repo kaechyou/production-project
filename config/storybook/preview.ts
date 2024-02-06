@@ -13,9 +13,9 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-    layout: 'centered'
+    layout: 'centered',
   },
-  decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouteDecorator]
+  decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouteDecorator],
 };
 
 export default preview;

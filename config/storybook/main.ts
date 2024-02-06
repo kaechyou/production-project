@@ -20,10 +20,10 @@ const config: StorybookConfig = {
     jsc: {
       transform: {
         react: {
-          runtime: 'automatic'
-        }
-      }
-    }
+          runtime: 'automatic',
+        },
+      },
+    },
   }),
   docs: {
     autodocs: 'tag',

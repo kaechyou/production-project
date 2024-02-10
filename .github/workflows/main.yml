@@ -13,21 +13,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: setup Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install dependencies
+      - name: Install dependencies
         run: npm install
-      - name: build production project
+      - name: Build production project
         run: npm run build:prod
-      - name: run typescript linter
+      - name: Run typescript linter
         run: npm run lint:ts
-      - name: run scss linter
+      - name: Run scss linter
         run: npm run lint:scss
-      - name: run unit tests
+      - name: Run unit tests
         run: npm run test:unit
-      - name: build storybook
+      - name: Build storybook
         run: npm run storybook:build
-      - name: run screenshots tests
+      - name: Run screenshots tests
         run: npm run test:ui:ci
